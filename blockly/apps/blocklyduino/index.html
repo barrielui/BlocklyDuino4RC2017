@@ -365,6 +365,25 @@ function init() {
     <category name="Variables" custom="VARIABLE"></category>
     <category name="Functions" custom="PROCEDURE"></category>
     <sep></sep>
+    
+    <category name="Bluetooth">
+      <block type="BTReceive">
+      
+      </block>
+      <block type="controls_if"></block>	
+    </category>
+    
+    <category name="Adafruit Servo">
+      <block type="pwm_moveTo">
+        <value name="DEGREE">
+          <block type="math_number">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+      </block>  
+    </category>
+    
+    <sep></sep>
     <category name="Input/Output">
       <block type="inout_highlow"></block>
       <block type="inout_digital_write"></block>
@@ -401,14 +420,10 @@ function init() {
             <field name="NUM">0</field>
           </block>
         </value>
-        <value name="DELAY_TIME">
-          <block type="math_number">
-            <field name="NUM">1000</field>
-          </block>
-        </value>
       </block>
       <block type="servo_read_degrees"></block>
     </category>
+
     <category name="Grove Analog">
       <block type="grove_rotary_angle"></block>
       <block type="grove_temporature_sensor"></block>
