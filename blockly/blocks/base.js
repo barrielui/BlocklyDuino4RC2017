@@ -182,17 +182,13 @@ Blockly.Blocks['servo_move'] = {
     this.setColour(190);
     this.appendDummyInput()
         .appendField("Servo")
-        .appendField(new Blockly.FieldImage("http://www.seeedstudio.com/depot/images/product/a991.jpg", 64, 64))
+        .appendField(new Blockly.FieldImage("http://www.jameco.com/Jameco/Products/MakeImag/2128198.jpg", 64, 64)) 
         .appendField("PIN#")
         .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
     this.appendValueInput("DEGREE", 'Number')
         .setCheck('Number')
         .setAlign(Blockly.ALIGN_RIGHT)
         .appendField("Degree (0~180)");
-    this.appendValueInput("DELAY_TIME", 'Number')
-        .setCheck('Number')
-        .setAlign(Blockly.ALIGN_RIGHT)
-        .appendField("Delay");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip('move between 0~180 degree');
@@ -227,3 +223,4 @@ Blockly.Blocks['serial_print'] = {
     this.setTooltip('Prints data to the console/serial port as human-readable ASCII text.');
   }
 };
+
